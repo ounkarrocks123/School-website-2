@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>School Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!--Assuming "Menu with Marquee" and "Contact Us" has been completed in Project 68 -->
+    <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">The Heritage School</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#campuslife">Campus Life</a></li>
+                <li><a href="#achievments">Achieivments</a></li>
+                <li><a href="#whatsnew">Whats new</a></li>
+                <li><a href="#alumini">Alumini</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="anouncment">
+            <marquee id="marqueeStyle" onmousover="this.stop()" onmouseout="this.start()">
+                Feel Free to ask any Queries
+            </marquee>
+        </div>
+
+    </nav>
+
+    <iframe width="1500" height="518" src="https://www.youtube.com/embed/wrlktXSAaoE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <div class="container">
+
+
+        <!--Campus Life-->
+        <div class="page-header" id="campus_life">
+            <h2 class="text-capitalize">Campus Life</h2>
+
+            <div class="row">
+                <!--1st Campus Life-->
+                <div class="travel_mainDiv">
+                    <img class="img-responsive" src="http://rohini.ths.ac.in/wp-content/themes/rohini-school/img/ib125.jpg">
+                    <h4 class="text-capitalize"><kbd>CLUBS AT HERITAGE</kbd></h4>
+                    <hr>
+
+                    <p class="text-muted text-left">Clubs and societies help our students achieve excellence in their particular areas of interest.</p>
+                </div>
+                <!--2nd Campus Life-->
+                <div class="travel_mainDiv">
+                    <!--Give appropriate class below for the image img-responsive-->
+                    <img class="" src="http://rohini.ths.ac.in/wp-content/themes/rohini-school/img/gurgoan-admission1.jpg">
+                    <h4 class="text-capitalize"><kbd>SCHOOL LIBRARY</kbd></h4>
+                    <hr>
+                    <!--Give classes below text-success text-left-->
+
+                    <p class="text-muted text-left">Our classrooms, well supported by audio-visual aids and ICT ensure a vibrant environment for teaching-learning</p>
+
+                </div>
+                <!--3rd Campus life-->
+                <div class="travel_mainDiv">
+                    <img class="img-responsive" src="https://scontent.fdel8-1.fna.fbcdn.net/v/t1.6435-9/53796600_1923811504394898_177613841335582720_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=973b4a&_nc_ohc=dXW2Rk46xsgAX-EbUu2&_nc_ht=scontent.fdel8-1.fna&oh=3aa4ae873bf6d754b725a95920c86df6&oe=6194BD44">
+                    <!-- Give text-capitalize below to make the first letters in Capitals-->
+                    <h4 class=""><kbd>SCHOOL ASSEMBLY</kbd></h4>
+                    <hr>
+                    
+                    <!-- Give text-muted below to show the text in grey color-->
+                    <p class="text-left">An amazing place to perform and even surprise teachers and parents!</p>
+                </div>
+
+            </div>
+        </div>
+        <!--Achievements-->
+        <div class="page-header" id="achievements">
+            <h2 class="text-capitalize">school achievements</h2>
+        </div>
+        <div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achievement1">
+        Digital Literacy championship <i class="fa fa-sort-desc"></i>
+        </div>
+        <!--1st Achievement-->
+        <div id="school_achievement1" class="collapse">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID">
+                <img src="data:image/jpeg;base64,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" class="img-responsive img-thumbnail">
+            </div>
+
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                <h5 class="text-success text-left text-capitalize"> 
+                    Got Rank 4th
+                </h5>
+                
+            </div>
+        </div>
+        <!--2nd Achievement-->
+        <div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achievement2">
+            Inter School Football Competition<i class="fa fa-sort-desc"></i>
+        </div>
+
+        <div id="school_achievement2" class="collapse">
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID">
+
+                <img src="https://cathedral-school.com/wp-content/uploads/2017/01/ICSE-STATE-FOOTBALL-WINNER-TEAM-2.jpeg" class="img-responsive img-thumbnail">
+            </div>
+
+            <div class="movie_text col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                <h5 class="text-success text-left text-capitalize">Came second in inter school football competition
+                </h5>
+               
+            </div>
+        </div>
+
+       <br>
+        <br>
+        <div class=“page-header col–lg–12 col–md–12 col–sm–12 col–xs–12” id-“contactUs”>
+
+
+            <h2 class – “text-capitalize”> Contact Us </h2>
+        </div>
+        <div id="map">
+            <iframe width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.945929112045!2d77.08030231503838!3d28.721161882382866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03f8ddade33b%3A0xd8dc05a5aca2b038!2sThe%20Heritage%20School!5e0!3m2!1sen!2sin!4v1629972474966!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div id="details">
+            <img src="https://i.postimg.cc/RZMSc6hR/sp.png" class="img-responsive img-circle col-lg-3 col-md-3 col-sm-3 col-xs-4">
+
+            <h3>Principal Name: </h3>
+            <h4>Mrs. Yakshi Gulati </h4>
+            <div class="contact_1">
+                <a href="mailto:contact@rohini.theheritageschool.in?Subject=Hi ">
+                    <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;contact@rohini.theheritageschool.in</h5>
+                </a>
+                <a href="#">
+                    <h5><i class="fa fa-instagram"></i>&nbsp;&nbsp;https://www.instagram.com/theheritageschool_rohini/?hl=en
+                    </h5>
+                </a>
+                <a href="#">
+                    <h5><i class="fa fa-phone-square"></i>&nbsp;&nbsp;011-27062800/900</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+
+</html>
